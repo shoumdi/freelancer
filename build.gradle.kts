@@ -29,7 +29,9 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.auth0:java-jwt:4.5.1")}
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("com.auth0:java-jwt:4.5.1")
+}
 
 tasks.withType<Test> {
     useJUnitPlatform()

@@ -1,6 +1,6 @@
-package com.api.freelancer.user.repository;
+package com.api.freelancer.user.infrastructure.repository;
 
-import com.api.freelancer.user.entity.User;
+import com.api.freelancer.user.infrastructure.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

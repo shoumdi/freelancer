@@ -1,4 +1,4 @@
-package com.api.freelancer.user.entity;
+package com.api.freelancer.user.infrastructure.entity;
 
 import jakarta.persistence.*;
 
@@ -10,9 +10,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique=true,nullable = false)
+    @Column(unique=true,nullable = false,length = 50)
     private String email;
-    @Column(nullable = false)
+    @Column(nullable = false,length = 30)
     private String username;
     @Column(nullable = false)
     private String password;

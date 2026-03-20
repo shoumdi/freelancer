@@ -1,4 +1,4 @@
-package com.api.freelancer.user.entity;
+package com.api.freelancer.user.infrastructure.entity;
 
 import jakarta.persistence.*;
 
@@ -14,7 +14,7 @@ public class Role {
     private Long id;
     @Column(nullable = false)
     private String name;
-    @Column(name = "created_at")
+    @Column(name = "created_at",length = 30)
     private LocalDateTime createdAt;
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;

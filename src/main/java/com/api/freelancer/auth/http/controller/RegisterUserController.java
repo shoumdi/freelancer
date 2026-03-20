@@ -1,15 +1,12 @@
-package com.api.freelancer.auth.controller;
+package com.api.freelancer.auth.http.controller;
 
-import com.api.freelancer.auth.request.RegisterUserRequest;
-import com.api.freelancer.auth.service.RegisterUserService;
+import com.api.freelancer.auth.http.dto.request.RegisterUserRequest;
 import com.api.freelancer.core.utils.result.Failure;
 import com.api.freelancer.core.utils.result.Result;
 import com.api.freelancer.core.utils.result.Success;
-import com.api.freelancer.user.mapper.UserMapper;
-import com.api.freelancer.user.entity.User;
+import com.api.freelancer.user.infrastructure.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
