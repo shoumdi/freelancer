@@ -1,4 +1,4 @@
-package com.api.freelancer.auth.http.dto.request;
+package com.api.freelancer.http.user.dto.request;
 
 
 import jakarta.validation.constraints.Email;
@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-public record RegisterUserRequest(
+public record RegisterRequest(
         @NotBlank(message = "Username is required")
         @Size(min = 3, max = 30,message = "User name should have more than 2 and less than 31 chars")
         String username,
